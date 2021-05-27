@@ -1,0 +1,56 @@
+@use 'partials/fonts';
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.col-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: aqua;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.col-left ul {
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.projects {
+  display: block;
+  padding: 1rem;
+  background-color: aqua;
+  color: #fff;
+  max-height: 2rem;
+}
+
+.projects a {
+  font: 900 1rem Roboto;
+  font-size: clamp(2rem, 3vw, 9rem);
+  letter-spacing: 0.05rem;
+}
+
+.projects a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
